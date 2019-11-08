@@ -12,7 +12,7 @@ RUN apt-get install -y openssh-server
 
 RUN apt-get install -y firefox
 
-RUN apt-get install -y xrdp
+RUN apt-get install -y eclipse
 
 RUN apt-get install -y xfce4
 
