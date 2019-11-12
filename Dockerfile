@@ -16,5 +16,20 @@ RUN apt-get install -y eclipse
 
 RUN apt-get install -y xfce4
 
+RUN apt-get install -y default-jre
+
+RUN adduser --quiet --uid 2223 erichard
+RUN echo "erichard:000000" | chpasswd
+
+RUN adduser --quiet --uid 2224 azias
+RUN echo "azias:000000" | chpasswd
+
+RUN adduser --quiet --uid 2225 ethierry
+RUN echo "ethierry:000000" | chpasswd
+
+RUN apt-get install -y xfce4-terminal
+RUN update-alternatives --config x-terminal-emulator
 
 EXPOSE 3390
+
+ENTRYPOINT ["/bin/bash"]
