@@ -32,4 +32,5 @@ RUN update-alternatives --config x-terminal-emulator
 
 EXPOSE 3390
 
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/usr/bin/jenkins-slave.sh"]
