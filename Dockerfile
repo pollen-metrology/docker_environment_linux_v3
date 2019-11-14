@@ -1,3 +1,4 @@
+# docker build -t pollenm/docker_environment_linux_v3 .
 FROM pollenm/jenkins_linux_v3
 LABEL MAINTAINER Pollen Metrology <admin-team@pollen-metrology.com>
 
@@ -27,8 +28,12 @@ RUN echo "azias:000000" | chpasswd
 RUN adduser --quiet --uid 2225 ethierry
 RUN echo "ethierry:000000" | chpasswd
 
+# Disable Gnome terminal
+RUN apt-get remove -y gnome-terminal
+
+# Install xfce4 terminal
 RUN apt-get install -y xfce4-terminal
-RUN update-alternatives --config x-terminal-emulator
+#RUN update-alternatives --config x-terminal-emulator
 
 EXPOSE 3390
 
