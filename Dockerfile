@@ -64,6 +64,9 @@ RUN apt-get install -y samba smbclient sssd realmd dnsutils policykit-1 packagek
 # ARC Path
 ENV PATH "$PATH:/home/phabricator/arcanist/bin/arc"
 
+# GEDIT
+RUN apt-get install -y gedit
+
 ENTRYPOINT ["/usr/bin/./startup-script.sh"]
 
 #ENTRYPOINT ["/bin/bash"]
