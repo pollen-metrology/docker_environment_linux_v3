@@ -16,6 +16,7 @@ createNewUser "erichard" "2223"
 createNewUser "azias" "2224"
 createNewUser "ethierry" "2225"
 createNewUser "jytissot" "2226"
+createNewUser "mviardot" "2227"
 
 # add path arc
 # home/phabricator/arcanist/bin/arc
