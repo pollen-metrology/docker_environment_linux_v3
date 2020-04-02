@@ -67,6 +67,9 @@ ENV PATH "$PATH:/home/phabricator/arcanist/bin/arc"
 # GEDIT
 RUN apt-get install -y gedit
 
+# Upgrade conan
+RUN pip install conan --upgrade
+
 ENTRYPOINT ["/usr/bin/./startup-script.sh"]
 
 #ENTRYPOINT ["/bin/bash"]
