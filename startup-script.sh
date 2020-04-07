@@ -21,5 +21,5 @@ createNewUser "mviardot" "2227"
 # add path arc
 # home/phabricator/arcanist/bin/arc
 
-/bin/bash
-# /usr/bin/jenkins-slave.sh
+#/bin/bash
+/usr/bin/jenkins-slave.sh
