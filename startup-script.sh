@@ -22,4 +22,4 @@ createNewUser "mviardot" "2227"
 # home/phabricator/arcanist/bin/arc
 
 #/bin/bash
-/usr/bin/jenkins-slave.sh
+/usr/bin/./jenkins-slave.sh
